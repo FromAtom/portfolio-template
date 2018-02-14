@@ -1,14 +1,8 @@
 # portfolio-template
 ポートフォリオサイト
 
-## 構成
-- middleman
-- slim
-- sass
-- puma
-
 ## 開発方法
-### Setup
+### セットアップ
 ```bash
 $ git clone git@github.com:FromAtom/portfolio-template.git
 $ cd portfolio-template
@@ -16,7 +10,6 @@ $ bundle install --path vendor/bundle
 ```
 
 ### 開発サイクル
-
 これを叩くとサーバが立ち上がる。
 
 ```bash
@@ -35,3 +28,13 @@ $ open 'http://localhost:4567'
 
 と書けば良い。
 
+## BASIC認証
+下記2つの環境変数を設定することで、BASIC認証を有効化できます。
+
+```ruby
+ENV["PORTRAIT_USER"] #ユーザ名
+ENV["PORTRAIT_PASSWORD"] #パスワード
+```
+
+## License
+[MIT](LICENSE)
